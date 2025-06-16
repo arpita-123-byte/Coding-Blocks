@@ -1,0 +1,66 @@
+ /* h1 span{
+    color:red
+} */
+
+/* adjacent sibling */
+ /* article + div{
+    color:blue;
+    /* border: 2px solid black; */
+ /* } */ 
+
+ /* general sibling */
+ /* article ~ div{
+    background-color:cyan;
+ } */
+
+ /* hover: */
+ /* div{
+    background-color:red ;
+ }
+ div:hover{
+    background-color: yellow;
+ }
+
+ /* focus */
+ /* input{
+    background-color:blue;
+ }
+ input:focus{
+    background-color: green;
+ }  */
+
+ /* :active */
+ /* a{
+    font-size:50px;
+ }
+ a:active{
+    font-size: 100px;
+    border: 2px dotted purple;
+ } */
+
+ /* :visited */
+ /* a:visited{
+    color:orange;
+ } */
+
+ /* pseudo elements */
+ /* ::first-letter */
+ p::first-letter{
+    font-size: 100px;
+    color: blue;
+ }
+
+ p::first-letter{
+    font-size: 100px;
+    font-family: cursive;
+ }
+
+ /* before */
+ p::before{
+    content: "Hello";
+ }
+
+ /* after */
+ p::after{
+    content: "World";
+ }
