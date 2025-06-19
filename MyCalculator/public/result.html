@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Results - My Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My Calculator - APP</h1>
+  <form method="POST" action="/calculate">
+    <input type="number" name="num1" placeholder="First Number" required>
+    <input type="number" name="num2" placeholder="Second Number" required>
+    <button type="submit">Calculate</button>
+  </form>
+
+  <div id="result">
+    <p>You entered: <strong>{{NUM1}}</strong> and <strong>{{NUM2}}</strong></p>
+    <p>Sum: {{SUM}}</p>
+    <p>Product: {{PRODUCT}}</p>
+    <p>Divide: {{DIVIDE}}</p>
+  </div>
+</body>
+</html>
+
