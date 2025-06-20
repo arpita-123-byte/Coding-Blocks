@@ -8,7 +8,7 @@ function openGitHub() {
 
 function downloadResume() {
     const link = document.createElement('a');
-    link.href = 'Arpita_Bansal_BMU.pdf'; // your correct resume file
+    link.href = 'Arpita_Bansal_BMU.pdf'; 
     link.download = 'Arpita_Bansal_BMU.pdf';
     link.click();
 }
