@@ -1,10 +1,10 @@
 const fs = require('fs');
 const sharp = require('sharp');
 
-const originalImagePath = 'image.png';      // Input image (must exist)
-const base64TextFile = 'image.txt';            // Base64 text file
-const restoredImagePath = 'restored.png';      // Image restored from text
-const resizedImagePath = 'resized.png';        // Resized output
+const originalImagePath = 'image.png';      
+const base64TextFile = 'image.txt';            
+const restoredImagePath = 'restored.png';      
+const resizedImagePath = 'resized.png';        
 
 // Step 1: Read image and convert to base64 text
 function imageToBase64() {
@@ -25,7 +25,7 @@ function base64ToImage() {
 // Step 3: Resize the restored image
 function resizeImage() {
   sharp(restoredImagePath)
-    .resize(200) // width 200px, auto height
+    .resize(200) 
     .toFile(resizedImagePath)
     .then(info => {
       console.log('Step 3: Image resized successfully.');
@@ -36,7 +36,7 @@ function resizeImage() {
     });
 }
 
-// Sequential execution
+
 function main() {
   try {
     imageToBase64();

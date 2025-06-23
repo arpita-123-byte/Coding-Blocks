@@ -71,6 +71,6 @@ const { exec } = require('child_process');
 
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
-    exec(`start http://localhost:${PORT}`); // Auto-opens in browser
+    exec(`start http://localhost:${PORT}`); 
 });
 

@@ -38,7 +38,7 @@ app.listen(PORT, () => {
   const url = `http://localhost:${PORT}`;
   console.log(`Server running at ${url}`);
 
-  //  Auto-open browser
+  
   const command = process.platform === "win32" ? `start ${url}` : `xdg-open ${url}`;
   exec(command);
 });
